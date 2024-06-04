@@ -8,17 +8,17 @@ Firstly, we solved CFD model parametrically and output data for data analysis by
 
 (File: PyFluent.py)
 
-![PyFluent](https://github.com/PochingHsu/AcoilCFDSuggorate/assets/165426535/c9bb1667-af0b-444b-b057-d5c155792009)
+![PyFluent](https://github.com/PochingHsu/Acoil/assets/165426535/f490f5a3-243e-489c-8ffa-9543a6080d48)
 
 ## ML suggorate Models Development
 The air velocity profile prediction of ANN model:
 
 (File: DataSplit.py -> ann.py -> ann_pred.py)
  
-![ANN](https://github.com/PochingHsu/AcoilCFDSuggorate/assets/165426535/d29352f2-9641-499e-ba8a-2d039441249e)
+![ANN](https://github.com/PochingHsu/Acoil/assets/165426535/7ee27fa2-cc4b-4f17-999d-3811acadbe17)
 
 The air velocity profile prediction of GaussianProcess model:
 
 (File: DataSplit.py -> ml.py -> ml_pred.py)
  
-![GP](https://github.com/PochingHsu/AcoilCFDSuggorate/assets/165426535/a354ce75-4f19-48ed-a8eb-a78cbe580558)
+![GP](https://github.com/PochingHsu/Acoil/assets/165426535/8b564037-fcb9-4443-a989-cbf6c3d2a4e4)
