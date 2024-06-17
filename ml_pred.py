@@ -16,6 +16,7 @@ from func import pred_plot,pred_plot_compare, output_full_profile
 # Define A-coil & flow rate
 Acoil = 1  # 1: A-coil 24C-B, 2: A-coil 36C-B, 3: A-coil 36C-C, 4: A-coil 48C-C
 FR = 300  # flow rate: <470, >1600 [CFM]
+num_tube = 54  # the number of tube defined in CoilDesigner
 #
 # load A-coil geometric info.
 path = r'./data' # relative path
@@ -68,4 +69,9 @@ model_input['Air Velocity [m/s]'] = preds.reshape(-1, 1)
 output_path = path # + '\LGE_Conds_Output'
 df_out = output_full_profile(model_input)
 SR = len(df_out)
-df_out.to_csv(output_path+'\A-coil' + str(Acoil) + '_u_' + str(FR) + 'CFM_SR_' + str(SR) + '_even_full.csv', index=False)
+df_out = df_out['Air Velocity [m/s]'].to_numpy()
+df_out_transposed = np.transpose(df_out)
+df_CD = np.tile(df_out_transposed, (num_tube, 1))
+df_CD = pd.DataFrame(df_CD)
+#df_out.to_csv(output_path+'\A-coil' + str(Acoil) + '_u_' + str(FR) + 'CFM_SR_' + str(SR) + '_even_full.csv', index=False)
+df_CD.to_csv(output_path+'\A-coil' + str(Acoil) + '_u_' + str(FR) + 'CFM_SR_' + str(SR) + '_full_matrix.csv', header=False, index=False)
