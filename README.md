@@ -3,7 +3,7 @@ This project leverages machine learning models (e.g., ANN, KNN, Gaussian Process
 
 ##  Automated CFD Data Generation
 
-First, I use ANSYS Fluent-Python API, PyFluent to automatically and parametrically solved the CFD models, and then extracted output data for data analysis and training ML surrogate models. The data processing workflow is shown below:
+First, I use ANSYS Fluent-Python API, PyFluent to automatically and parametrically solved the CFD models, and then extracted output data for data analysis and ML surrogate models training. The data processing workflow is shown below:
 
 (File: PyFluent.py)
 
