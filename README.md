@@ -1,9 +1,9 @@
 # Developing CFD Surrogate Models Using Machine Learning for A-Coil Velocity Profile Prediction
 This project leverages machine learning models (e.g., ANN, KNN, Gaussian Process, Random Forest, Decision Tree, and Linear Regression) to develop a computationally efficient surrogate model trained on CFD simulation data. The surrogate model can be used for design optimization of A-coils and HVAC systems.
 
-## Generate CFD data
+##  Automated CFD Data Generation
 
-First, we solved the CFD model parametrically and extracted output data for analysis using the ANSYS Fluent-Python API, PyFluent. The data processing workflow is shown below:
+First, I use ANSYS Fluent-Python API, PyFluent to automatically and parametrically solved the CFD models, and then extracted output data for analysis. The data processing workflow is shown below:
 
 (File: PyFluent.py)
 
