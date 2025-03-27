@@ -3,7 +3,7 @@ This project leverages machine learning models (e.g., ANN, KNN, Gaussian Process
 
 ## Generate CFD data
 
-Firstly, we solved CFD model parametrically and output data for data analysis by using ANSYSFLEUNT-Python API: Pyfluent. The data processing flow is shown in below:
+First, we solved the CFD model parametrically and extracted output data for analysis using the ANSYS Fluent-Python API, PyFluent. The data processing workflow is shown below:
 
 (File: PyFluent.py)
 
