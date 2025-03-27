@@ -1,6 +1,5 @@
 # Developing CFD Surrogate Models Using Machine Learning for A-Coil Velocity Profile Prediction
-This project uses ML models (e.g. ANN, KNN, GaussianProcess, RandomForest, DecisionTree and LinearRegression) to develop computionally efficient suggorate model with CFD simulation data.
-The suggorate model can be used for the design optimization of A-coil or HVAC system.
+This project leverages machine learning models (e.g., ANN, KNN, Gaussian Process, Random Forest, Decision Tree, and Linear Regression) to develop a computationally efficient surrogate model trained on CFD simulation data. The surrogate model can be used for design optimization of A-coils and HVAC systems.
 
 ## Generate CFD data
 
